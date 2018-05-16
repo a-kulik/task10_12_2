@@ -61,7 +61,7 @@ services:
     volumes:
      - ./certs:/etc/ssl/certs
      - ./etc/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-     - "$NGINX_LOG_DIR"/access.log:/var/log/nginx/access.log:rw
+     - "$NGINX_LOG_DIR/access.log:/var/log/nginx/access.log:rw"
     container_name: nginx
   web2:
     image: httpd:2.4
