@@ -39,7 +39,7 @@ $(rm ${dir_pwd}/conf.cnf)
 #---Create nginx config
 cat << EOF > ${dir_pwd}/etc/nginx.conf 
 server {
-    listen    $NGINX_PORT ssl;
+    listen    443 ssl;
     ssl_prefer_server_ciphers  on;
     ssl_ciphers  'ECDH !aNULL !eNULL !SSLv2 !SSLv3';
     ssl_certificate  /etc/ssl/certs/web.crt;
