@@ -67,3 +67,4 @@ services:
     image: httpd:2.4
     container_name: httpd
 EOF
+docker-compose up -d
