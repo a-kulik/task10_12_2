@@ -59,8 +59,8 @@ services:
     ports:
      - $NGINX_PORT:443
     volumes:
-     - ./certs:/etc/ssl/certs
-     - ./etc/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+     - ${dir_pwd}/certs:/etc/ssl/certs
+     - ${dir_pwd}/etc/nginx.conf:/etc/nginx/conf.d/default.conf:ro
      - "$NGINX_LOG_DIR/access.log:/var/log/nginx/access.log:rw"
     container_name: nginx
   web2:
