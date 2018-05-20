@@ -67,4 +67,4 @@ services:
     image: httpd:2.4
     container_name: httpd
 EOF
-docker-compose up -d
+docker-compose ${dir_pwd}/docker-compose.yml up -d
